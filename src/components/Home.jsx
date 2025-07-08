@@ -14,14 +14,22 @@ const Home = () => {
             <span className="skill-badge web-badge">Full-Stack Web Developer</span>
             <span className="skill-badge flutter-badge">Flutter Developer</span>
           </div>
-          <h2 className="hero-subtitle">Full Stack Developer</h2>
+          {/* <h2 className="hero-subtitle">Full Stack Developer</h2> */}
           <p className="hero-description">
             Passionate about creating innovative web applications and turning ideas into reality.
             Specialized in modern web technologies and backend development.
           </p>
           <div className="hero-buttons">
-            <button className="btn btn-primary">View My Work</button>
-            <button className="btn btn-secondary">Download CV</button>
+            <button
+              className="btn btn-primary"
+              onClick={() => {
+                const el = document.getElementById('projects');
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              View My Work
+            </button>
+            <button className="btn btn-secondary">Download Resume</button>
           </div>
         </div>
         <div className="hero-image">

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -52,8 +53,8 @@ const Contact = () => {
     {
       icon: '💼',
       title: 'LinkedIn',
-      value: 'linkedin.com/in/yourprofile',
-      link: 'https://linkedin.com/in/yourprofile'
+      value: 'Linkedin',
+      link: 'https://www.linkedin.com/in/aman-m-hafees'
     }
   ];
 
@@ -92,15 +93,15 @@ const Contact = () => {
             <div className="social-links">
               <h4>Follow Me</h4>
               <div className="social-icons">
-                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-icon">
-                  <span>🐙</span>
+                <a href="https://github.com/amanmhafees" target="_blank" rel="noopener noreferrer" className="social-icon">
+                  <FaGithub size={28} />
                 </a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="social-icon">
-                  <span>💼</span>
+                <a href="https://www.linkedin.com/in/aman-m-hafees" target="_blank" rel="noopener noreferrer" className="social-icon">
+                  <FaLinkedin size={28} color="#0077b5" />
                 </a>
-                <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-icon">
+                {/* <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="social-icon">
                   <span>🐦</span>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
