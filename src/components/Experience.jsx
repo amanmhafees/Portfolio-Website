@@ -28,7 +28,6 @@ const Experience = () => (
       <div className="timeline-bar"></div>
       {experiences.map((exp, index) => (
         <div key={index} className="experience-item fade-in-timeline" style={{'--exp-index': index}}>
-          <div className="timeline-dot"></div>
           <div className="experience-header">
             {exp.icon}
             <h4>{exp.title}</h4>
