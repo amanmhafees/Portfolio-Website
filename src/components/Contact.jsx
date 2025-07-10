@@ -70,11 +70,11 @@ const Contact = () => {
         <div className="contact-content">
           <div className="contact-info">
             <h3>Let's Connect</h3>
-            <p>
+            {/* <p>
               I'm passionate about creating innovative solutions and would love to discuss 
               how we can work together. Whether you have a project in mind or just want to 
               say hello, I'd love to hear from you.
-            </p>
+            </p> */}
             
             <div className="contact-details">
               {contactInfo.map((info, index) => (
