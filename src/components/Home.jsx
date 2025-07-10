@@ -29,7 +29,8 @@ const Home = () => {
             >
               View My Work
             </button>
-            <button className="btn btn-secondary">Download Resume</button>
+            <a href="/Resume.pdf" download className="btn btn-secondary">Download Resume</a>
+            {/* <button className="btn btn-secondary">Download Resume</button> */}
           </div>
         </div>
         <div className="hero-image">
