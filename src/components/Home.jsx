@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 import profileImg from '../assets/profile.jpg';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Home = () => {
   return (
@@ -33,10 +34,18 @@ const Home = () => {
             {/* <button className="btn btn-secondary">Download Resume</button> */}
           </div>
         </div>
-        <div className="hero-image">
+        <div className="hero-image" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <div className="profile-placeholder">
             {/* <span>👨‍💻</span> */}
             <img src={profileImg} alt="profile" className="profile-img" />
+          </div>
+          <div className="hero-social-icons" style={{ display: 'flex', justifyContent: 'center', gap: '1rem', marginTop: '1.5rem' }}>
+            <a href="https://github.com/amanmhafees" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <FaGithub size={28} />
+            </a>
+            <a href="https://www.linkedin.com/in/aman-m-hafees" target="_blank" rel="noopener noreferrer" className="social-icon">
+              <FaLinkedin size={28} color="#0077b5" />
+            </a>
           </div>
         </div>
       </div>
