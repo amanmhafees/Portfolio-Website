@@ -125,4 +125,30 @@
   .skills-grid {
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 600px) {
+  .skills-section .section-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .skills-grid {
+    gap: 1rem;
+  }
+  .modern-skills-card {
+    min-width: 0;
+    max-width: 98vw;
+    padding: 1rem 0.5rem;
+    font-size: 0.98rem;
+  }
+  .skills-card-title {
+    font-size: 1rem;
+  }
+  .skills-card-tagline {
+    font-size: 0.9rem;
+  }
+  .modern-skill-item {
+    font-size: 0.95rem;
+    padding: 0.15rem 0.4rem;
+  }
 } 
